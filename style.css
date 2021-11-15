@@ -1,0 +1,419 @@
+/*LAYOUT STYLES*/
+* {
+    font-family: "Poppins", "Open Sans","Helvetica Neue", Helvetica, sans-serif;
+ }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #ffffff;
+    min-width: 996px; 
+    font-weight: 300;
+    font-size: 16px;
+}
+
+body {
+    line-height: 21px;
+    color: #000;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color:#d45333;
+    margin: 0 0 13px 0;
+    font-weight: normal;
+}
+
+.span1, .span2, .span3, .span4, .span5 {
+    display: block;
+    float: left;
+    margin: 0 15px;
+}
+
+input {
+    height: 24px;
+    font-size: 100%;
+    margin: 0;
+    vertical-align: top;
+    line-height: normal;
+    padding: 4px;
+    display: inline-block;
+    border-radius: 1px;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+footer, header,  menu, nav, section {
+    display: block;
+}
+
+ol.unstyled, ul.unstyled {
+    margin: 0;
+    list-style: none outside none;
+}
+
+img {max-width: 100%;}
+
+ul, ol {
+    margin: 0 0 20px 20px;
+    padding: 0;
+}
+
+ul {
+    list-style: none; 
+}
+
+li {
+    text-align:center;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+
+
+.clearfix::after, .clearfix::before, .below::after, .below::before {
+    /*CHECK THIS WITH KRUTI - */
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*FLEXBOXES*/
+
+.flex-container-1, .flex-container-2, .flex-container-3 {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    background-color: #6ea094;
+    border-radius: 30px;
+    justify-content: space-evenly;
+    align-items: top;
+    zoom: 1;
+    }
+
+.flex-container-1 > img, .flex-container-2 > img, .flex-container-3 > img {
+    margin: 7px;
+    border-radius: 30px; 
+    min-height: 100%;   
+    min-width: 0; /*fixes horizontal overflow*/
+    zoom: 1;
+    }
+
+
+
+  
+/*PAGE CONTENT*/
+
+/*HEADER*/
+
+.wrapper {
+    width: 996px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+header.primary {
+    height: 135px;
+    margin-top: 20px;
+    display: block;
+    z-index: 1000;
+    }
+
+header.primary #line {
+    text-align: center;
+    margin-top: 35px;
+    color: #d45333;
+    text-transform: uppercase;
+    position: relative;
+    left: 10px; 
+}
+
+header.primary #brand {
+    max-width: 350px;
+    height: 28px;
+    display: block;
+    margin: 43px auto;
+    margin-bottom: 0;
+}
+
+.span1 {
+    width: 219px;
+}
+
+.search-field {
+    list-style-type: none;
+}
+
+/*check if this is needed*/
+li.search-field{
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+    font-size: 11px;
+    list-style-type: none;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+}
+
+input.search_box {
+    border: none;
+    box-shadow: none;
+    color: #000;
+    line-height: 14px!important;
+    font-size: 12px!important;
+    width: 130px;
+    border-bottom: #000 1px solid;
+    padding-bottom: 2px;
+    text-transform: uppercase!important;
+    padding-top: 4px;  
+    letter-spacing: 2px!important;
+    text-align: center;
+}
+
+input[type=checkbox] {
+    height: 16px;
+    line-height: 16px;
+    vertical-align: middle;
+    }
+
+.search-field .search_box {
+    border: none;
+    box-shadow: none;
+    color: #000;
+    line-height: 14px!important;
+    font-size: 12px!important;
+    width: 130px;
+    border-bottom: #000 1px solid;        padding-bottom: 2px;
+    text-transform: uppercase!important;
+    padding-top: 4px;
+    letter-spacing: 2px!important;
+    text-align: center;
+}
+
+.span2 {
+    width: 468px;
+    /*place logo behind h1 in another div     background-image: url(images/Email-hallmark.jpg);
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+h1 {
+    font-size: 2.75rem;
+    font-weight: 200;
+    max-width: 50%;
+    display: inline-block;
+    margin: 10px 0 43px 0;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+header.primary .header-logo {
+    height: 75px;
+    text-align: center;
+    margin-top: 14px;
+}
+
+
+/*NAVBAR*/
+  /*NEED THIS??*/
+.index-wrapper #nav {
+    margin-bottom: 0!important;
+}
+    
+#nav {
+    min-width: 996px;
+    height: 50px;
+    border-bottom: 1px #fff solid;
+    letter-spacing: 2px;
+    background-color: #924c1b;
+    color: rgba(248, 237, 223, 0.993);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /*this stops navbar cutting through filtered images*/
+}
+
+.below {
+    margin: 0 0 30px 0;
+}
+
+.under {
+    margin-bottom: 30px!important;
+}
+/*NEED THIS?? - poss shopify element*/
+.clearfix, .below {
+    zoom: 1;
+}
+
+.no-responsive-wrapper {
+    width: 996px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.no-responsive-wrapper::before {
+    display: block;
+    height: 20px;  
+}
+
+
+.span3 {
+    width: 966px;
+    overflow-x: hidden;
+}
+
+.clearfix-wrapper {
+    width: 996px;
+    margin: 0;
+    overflow: auto;
+    text-align: center;
+    padding-top: 15px; 
+}
+
+nav>ul {
+    text-align: center;
+}
+
+nav>ul>li {
+    float: none!important;
+    display: inline-block!important;
+    margin-bottom: 0;
+}
+
+nav li {
+    width: 130px; 
+}
+
+.photogrid {
+    margin-top: 33px;
+}
+
+.fas .fa {
+    display: inline-block;
+    line-height: 1;
+}
+
+a {
+    text-decoration: none;
+    outline: 0;
+}
+
+/*IMAGES*/
+
+#logo {
+    min-height: 55px;
+}
+#corana-rings {
+    filter: none;
+}
+#praying-for-rain {
+    filter: brightness(1.23);
+}
+#more-rain {
+    filter: none;
+}
+#claw {
+    filter: brightness(1.25);
+}
+#asteroid {
+    filter: brightness(1.01);
+}
+#good-day-full {
+    filter: brightness(1.05);
+}
+#maquettes {
+    filter: brightness(1.05);
+}
+#agd-crop {
+    filter: brightness(1.15);
+}
+#ceramics-1 {
+    filter: grayscale(90%);
+}
+#ceramics-2 {
+    filter: grayscale(90%);
+}
+#ceramics-3 {
+    filter: none;
+}
+
+/*FOOTER*/
+
+.footer-wrapper {
+    min-width: 996px;
+    background-color: #924c1b;
+    width: 100%;
+    margin-top: 133px;
+}
+
+#footer {
+    text-align: center;
+    position: relative;
+    padding-top: 20px;
+    font-size: 12px;
+    width: 996px;
+    margin: 0 auto;
+}
+
+
+
+
+
+/*MEDIA*/
+
+@media only screen and (max-width: 480px) {
+    body {
+        max-width: 90%;
+    }
+    .index-wrapper {
+        max-width: 85%;
+        display: block;
+        margin: 0 auto;
+        }
+
+ 
+}
+
+
+
+@media only screen and (max-width: 480px) {
+    .invert-wrap {
+    padding-top: 75px!important;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #nav, .menu-wrapper, .no-responsive-wrapper, .span3, .span2, .toolbar, .wrapper, footer {
+    width: 100%;
+    margin: 0;
+    }   
+}
+
+@media only screen and (max-width: 480px) {
+    #nav, .footer-wrapper {
+    width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .about-buttons, .photogrid-container, .footer-wrapper, .pagination-desktop .pagination,  .second-footer, nav.main {
+    display: none!important;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .index-wrapper .below {
+    display: none;
+    }
+}
