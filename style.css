@@ -1,5 +1,6 @@
 /*LAYOUT STYLES*/
 * {
+    box-sizing: border-box;
     font-family: "Poppins", "Open Sans","Helvetica Neue", Helvetica, sans-serif;
  }
 
@@ -80,7 +81,7 @@ ul li {
     /*CHECK THIS WITH KRUTI - */
     content: "";
     display: block;
-    height: 0;
+    height: 7px;
     visibility: hidden;
 }
 
@@ -136,10 +137,9 @@ header.primary #line {
 
 header.primary #brand {
     max-width: 350px;
-    height: 28px;
-    display: block;
-    margin: 43px auto;
-    margin-bottom: 0;
+    height: 50px;
+    display: inline-block;
+    margin: 43px 43px 43px 60px;
 }
 
 .span1 {
@@ -210,8 +210,7 @@ input[type=checkbox] {
 h1 {
     font-size: 2.75rem;
     font-weight: 200;
-    max-width: 50%;
-    display: inline-block;
+    max-width: 50%; 
     margin: 10px 0 43px 0;
     text-align: center;
     letter-spacing: 2px;
@@ -389,7 +388,7 @@ a {
 
 @media only screen and (max-width: 480px) {
     .invert-wrap {
-    padding-top: 75px!important;
+    padding-top: 75px;
     }
 }
 
